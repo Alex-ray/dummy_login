@@ -1,0 +1,10 @@
+<div class="container">
+ <h1>URL SHORTENER!</h1>
+ <% if @invalid_url %>
+  <p><%= @invalid_url %> is a invalid url!</p>
+ <% end %>
+ <form id="url" action="/urls" method="post" name="url">
+  <input id="url" type="text" name="url[long_url]" placeholder="http://example.com" /><br>
+  <input id="button" type="submit" value="Submit" />
+ </form>
+</div>

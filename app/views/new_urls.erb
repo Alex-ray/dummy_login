@@ -1,0 +1,6 @@
+<div class="container">
+  <h1>Here is your shortened url!</h1>
+  <% if @short_url %>
+    <a href="/<%= @short_url %>"><%= @short_url %></a>
+  <% end %>
+</div>
